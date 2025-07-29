@@ -24,6 +24,7 @@ class Command extends \think\console\Command
 
         // 迁移文件映射
         $this->setFileMaps([
+            'InsertSystemConfigXiaoHongShu' => dirname(__DIR__) . '/migrations/00_insert_system_config_xiao_hong_shu.php',
             'CreateXhsOrder' => dirname(__DIR__) . '/migrations/01_create_xhs_order.php',
             'CreateXhsOrderLogs' => dirname(__DIR__) . '/migrations/02_create_xhs_order_logs.php',
             'CreateXhsOrderProduct' => dirname(__DIR__) . '/migrations/03_create_xhs_order_product.php',
