@@ -1,0 +1,39 @@
+{
+  "name": "ledc/crmeb-xiao-hong-shu",
+  "description": "Crmeb单商户系统-小红书商家自研系统，包含公共API、商品、素材、库存、订单、售后等",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Ledc\\CrmebXiaoHongShu\\": "src/"
+    },
+    "files": [
+      "src/helper.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "david",
+      "email": "367013672@qq.com",
+      "homepage": "https://www.iyuu.cn",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "topthink/framework": ">=6.0",
+    "ledc/think-model-trait": "^7.2.40",
+    "ledc/crmeb-delivery-slot-booking": "^7.2.18",
+    "ledc/crmeb-intra-city": "^7.1.0",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-curl": "*"
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "Ledc\\CrmebXiaoHongShu\\Service"
+      ]
+    }
+  }
+}
